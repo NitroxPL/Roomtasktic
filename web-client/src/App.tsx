@@ -1,25 +1,15 @@
 import { useTranslation } from 'react-i18next';
-import './App.css';
+import { CssBaseline, ThemeProvider, Typography } from '@mui/material';
+import { theme } from './config';
 
 const App = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          {t('App')}
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Typography>{t('App')}</Typography>
+    </ThemeProvider>
   );
 }
 
