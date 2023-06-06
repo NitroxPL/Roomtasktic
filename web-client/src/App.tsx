@@ -1,11 +1,14 @@
+import { useTranslation } from 'react-i18next';
 import './App.css';
 
 const App = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="App">
       <header className="App-header">
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          {t('App')}
         </p>
         <a
           className="App-link"
