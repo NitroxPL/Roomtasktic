@@ -12,4 +12,4 @@ export function ruleFromAsserter({ required }: RuleArgs, translatedMessage: stri
                 : Promise.reject()
         ),
     });
-};
+}

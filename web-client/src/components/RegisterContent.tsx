@@ -1,11 +1,11 @@
-import { Space, Typography, Button, Form, message } from "antd";
-import { UserRegisterForm, UserRegisterFormFields } from "./forms";
+import { ArrowLeftOutlined } from "@ant-design/icons";
+import { Button, Form, Space, Typography, message } from "antd";
 import { createUserWithEmailAndPassword } from "firebase/auth";
+import { addDoc, collection } from "firebase/firestore";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { auth, db } from "src/config";
-import { ArrowLeftOutlined } from "@ant-design/icons";
-import { addDoc, collection } from "firebase/firestore";
+import { UserRegisterForm, UserRegisterFormFields } from "./forms";
+import { auth, db } from "src/database/firebase/firebase";
 
 type RegisterContentProps = {
   changeLoginState: CallableFunction;
