@@ -1,3 +1,17 @@
 {
-    "App": "Aplikacja"
+    "App": "Aplikacja",
+    "Email": "Email",
+    "Email is already in use": "Istnieje już konto z takim adresem email",
+    "Forgot password?": "Zapomniałeś hasła?",
+    "Login": "Zaloguj się",
+    "Login header": "Zaloguj się do swojego konta",
+    "Username": "Nazwa użytkownika", 
+    "Password": "Hasło",
+    "Please enter correct email": "Proszę podać poprawny adres email",
+    "Please enter correct password": "Proszę podać poprawne hasło. Hasło powinno składać się z 8 znaków, w tym jednej cyfry i jednej wielkiej litery",
+    "Please enter correct username": "Proszę podać poprawną nazwę użytkownika.",
+    "Register": "Zarejestruj się",
+    "Something went wrong": "Coś poszło nie tak. Spróbuj ponownie później",
+    "User with this email does not exist": "Nie znaleziono użytkownika o podanym adresie email",
+    "Wrong password": "Podane hasło jest nieprawidłowe"
 }
