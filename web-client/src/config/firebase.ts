@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDFriJNJLYG-b6hveD-759bQxCPLv1uXjU",
@@ -9,7 +10,7 @@ const firebaseConfig = {
   storageBucket: "roomtasktic.appspot.com",
   messagingSenderId: "225017633431",
   appId: "1:225017633431:web:abb02d376ad911ca5827d2",
-  measurementId: "G-08X6NNX7G1"
+  measurementId: "G-08X6NNX7G1",
 };
 
 // Initialize Firebase
@@ -17,3 +18,4 @@ const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth(app);
 export const analytics = getAnalytics(app);
+export const db = getFirestore(app);
