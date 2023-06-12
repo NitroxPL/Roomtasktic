@@ -1,7 +1,8 @@
 import { Form, Input } from 'antd';
 import { useTranslation } from 'react-i18next';
+import { assertIsCorrectUsername } from 'src/utils/validators';
 import { FormItemCommonProps, nameWithPrefix } from '.';
-import { usernameRule } from '../rules';
+import { ruleFromAsserter } from '../utils/formUtils';
 
 export const UsernameFormItem = ({ keyPrefix, showLabel, required, disabled }: FormItemCommonProps) => {
   const { t } = useTranslation();
@@ -10,7 +11,11 @@ export const UsernameFormItem = ({ keyPrefix, showLabel, required, disabled }: F
     <Form.Item
       label={showLabel && t('Username')}
       name={nameWithPrefix({ name: 'username', keyPrefix })}
-      rules={[usernameRule({ required: Boolean(required) })]}
+      rules={[
+        ruleFromAsserter({ required: Boolean(required) },
+          t('Please enter correct username'),
+          assertIsCorrectUsername)
+      ]}
     >
       <Input type="username" disabled={disabled} placeholder={!showLabel ? t('Username') as string : undefined}/>
     </Form.Item>

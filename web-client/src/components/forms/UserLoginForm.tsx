@@ -1,7 +1,6 @@
 import { Form } from "antd";
 import { FormProps } from ".";
-import { EmailFormItem } from "./items";
-import { PasswordFormItem } from "./items";
+import { EmailFormItem,PasswordFormItem } from "./items";
 
 export type UserLoginFormFields = {
   email: string;
