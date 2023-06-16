@@ -1,10 +1,10 @@
 import { Link, useNavigate } from "react-router-dom";
 
 import { Layout as LayoutAnt, Menu } from "antd";
-import { RouterSwitch } from "src/components";
 import { Footer } from "antd/es/layout/layout";
 import { signOut } from "firebase/auth";
-import { auth } from "src/config";
+import { RouterSwitch } from "src/components";
+import { auth } from "src/database/firebase/firebase";
 
 export const Layout = () => {
   const navigate = useNavigate();

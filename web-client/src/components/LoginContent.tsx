@@ -1,9 +1,9 @@
-import { Space, Typography, Button, Divider, Form, message } from "antd";
-import { UserLoginForm, UserLoginFormFields } from "./forms";
+import { Button, Divider, Form, Space, Typography, message } from "antd";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { auth } from "src/config";
+import { UserLoginForm, UserLoginFormFields } from "./forms";
+import { auth } from "src/database/firebase/firebase";
 
 type LoginContentProps = {
   changeLoginState: CallableFunction;

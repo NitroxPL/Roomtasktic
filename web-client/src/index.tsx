@@ -1,10 +1,10 @@
+import { ConfigProvider, theme } from "antd";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import "./App.css";
 import App from "./App";
-import "./i18n";
-import { ConfigProvider, theme } from "antd";
+import "./App.css";
+import "./translation/i18n";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

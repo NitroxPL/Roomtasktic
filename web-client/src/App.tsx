@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
-import { Layout, LoginPage } from "./views";
-import { User, onAuthStateChanged } from "firebase/auth";
-import { auth } from "./config";
-import "./App.css";
 import { Spin } from "antd";
+import { User, onAuthStateChanged } from "firebase/auth";
+import { useEffect, useState } from "react";
+import "./App.css";
+import { auth } from "./database/firebase/firebase";
+import { Layout, LoginPage } from "./views";
 
 const App = () => {
   const [user, setUser] = useState<User | null>(null);

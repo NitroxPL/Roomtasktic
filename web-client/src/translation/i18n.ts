@@ -1,6 +1,6 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import { CONFIG } from './config';
+import { CONFIG } from '../config';
 
 import pl from './locales/pl.json';
 

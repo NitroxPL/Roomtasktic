@@ -1,6 +1,6 @@
-import { assertIsCorrectUsername } from 'src/utils/validators';
 import type { Rule } from 'antd/lib/form';
 import { useTranslation } from 'react-i18next';
+import { assertIsCorrectUsername } from 'src/utils/validators';
 import { RuleArgs } from '.';
 
 export const usernameRule = ({ required }: RuleArgs): Rule => {
